@@ -255,4 +255,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Doppio Specific
+doppio/*.css
+
 # End of https://www.toptal.com/developers/gitignore/api/sass,linux,osx,windows,vim,sublimetext,node
