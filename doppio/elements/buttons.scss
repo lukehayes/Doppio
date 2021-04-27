@@ -1,0 +1,21 @@
+/**
+ * General button styling.
+ */
+
+// Parent styles that all buttons will inherit.
+@mixin baseButton() {
+    border-radius: $border-radius;
+    background-color: $dark-grey;
+    transition: $transition-speed all;
+
+    &:hover {
+        background-color: $light-grey;
+        color: $accent;
+    }
+}
+
+.btn,
+button {
+    @include baseButton();
+}
+
