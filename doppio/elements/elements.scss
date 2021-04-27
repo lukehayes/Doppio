@@ -6,4 +6,9 @@
 @import "links";
 @import "text";
 
+// General element styles
+hr {
+	border-top: 1px solid $dark-grey;
+	border-bottom: none;
+}
 
