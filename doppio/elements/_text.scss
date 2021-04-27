@@ -1,0 +1,17 @@
+/**
+ * Text styles like colors, weights etc.
+ */
+
+@use "sass:color";
+
+.text-light {
+    color : color.scale($dark-grey, $lightness: -44%);
+}
+
+.text-dark {
+    color : $black;
+}
+
+.text-accent {
+    color: $accent;
+}
