@@ -257,5 +257,6 @@ $RECYCLE.BIN/
 
 # Doppio Specific
 doppio/*.css
+*.css
 
 # End of https://www.toptal.com/developers/gitignore/api/sass,linux,osx,windows,vim,sublimetext,node
