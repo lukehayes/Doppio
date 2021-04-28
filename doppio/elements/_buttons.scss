@@ -3,7 +3,7 @@
  */
 
 // Parent styles that all buttons will inherit.
-@mixin baseButton() {
+@mixin DPBaseButton() {
     border-radius: $border-radius;
     background-color: $dark-grey;
     transition: $transition-speed all;
@@ -17,6 +17,6 @@
 .btn,
 .button,
 button {
-    @include baseButton();
+    @include DPBaseButton();
 }
 
