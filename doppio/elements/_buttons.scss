@@ -5,6 +5,8 @@
 // Parent styles that all buttons will inherit.
 @mixin DPBaseButton() {
     border-radius: $border-radius;
+    border-color: $black;
+    border-width: 2px;
     background-color: $dark-grey;
     transition: $transition-speed all;
 
