@@ -15,8 +15,11 @@
 
     .col {
         background-color: $light-grey;
+        border: 1px solid $dark-grey;
         display: block;
-        padding: 10px;
+        padding: 20px;
+        font-size: 0.91rem;
+        //font-size: 14px;
     }
 }
 
