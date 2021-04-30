@@ -2,23 +2,33 @@
  * General button styling.
  */
 
+@use "sass:color";
+
 // Parent styles that all buttons will inherit.
-@mixin DPBaseButton() {
+button {
+    border:none;
     border-radius: $border-radius;
-    border-color: $black;
-    border-width: 2px;
     background-color: $dark-grey;
     transition: $transition-speed all;
+    transtition-timing-function: ease-in-out;
+    padding: 10px 20px;
+    font-size: 0.91rem;
+    font-weight: 500;
+    margin: 5px;
+
+    &.dp-btn-dark {
+        background-color: $black;
+        color: $light-grey;
+    }
+
+    &.dp-btn-light {
+        background-color: $light-grey;
+        color: $black;
+    }
 
     &:hover {
         background-color: $light-grey;
         color: $accent;
     }
-}
 
-.btn,
-.button,
-button {
-    @include DPBaseButton();
 }
-
