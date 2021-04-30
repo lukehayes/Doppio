@@ -6,6 +6,7 @@
 .doppio-grid {
     max-width: $large-breakpoint;
     margin: 0 auto;
+    padding: $dp-global-padding;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
