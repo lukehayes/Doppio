@@ -3,7 +3,7 @@
  */
 
 // Base grid styles.
-.doppio-grid {
+.dp-grid {
     max-width: $large-breakpoint;
     margin: 0 auto;
     padding: $global-padding;
@@ -13,7 +13,7 @@
     grid-gap: 1rem;
     //align-items: center;
 
-    .col {
+    .dp-col {
         background-color: $light-grey;
         border: 1px solid $dark-grey;
         display: block;
