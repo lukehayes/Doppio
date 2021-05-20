@@ -29,17 +29,8 @@
 /**------------------------------------------------------------------------------
  * Media Queries
  -------------------------------------------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {}
-
-@media all and (min-width: 768px) and (max-width: 1024px) 
-{
-    body 
-    {
-        margin: 20px;
-    }
-}
-
-@media all and (min-width: 480px) and (max-width: 768px) 
+// This part is here to see how well it works on its own.
+@media all and (min-width: 480px)
 {
     body
     {
@@ -47,14 +38,32 @@
     }
 }
 
-@media all and (max-width: 480px) { 
-    body {
-        margin: 20px;
-    }
-}
+//@media all and (min-width: 1024px) and (max-width: 1280px) {}
 
-/* Portrait */
-@media screen and (orientation:portrait) { /* Portrait styles here */ }
-/* Landscape */
-@media screen and (orientation:landscape) { /* Landscape styles here */ }
+//@media all and (min-width: 768px) and (max-width: 1024px) 
+//{
+    //body 
+    //{
+        //margin: 20px;
+    //}
+//}
+
+//@media all and (min-width: 480px) and (max-width: 768px) 
+//{
+    //body
+    //{
+        //margin: 20px;
+    //}
+//}
+
+//@media all and (max-width: 480px) { 
+    //body {
+        //margin: 20px;
+    //}
+//}
+
+//[> Portrait <]
+//@media screen and (orientation:portrait) { [> Portrait styles here <] }
+//[> Landscape <]
+//@media screen and (orientation:landscape) { [> Landscape styles here <] }
 
