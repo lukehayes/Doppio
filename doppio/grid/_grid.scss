@@ -2,17 +2,22 @@
  * Doppio Grid System - work in progress. Removal probable.
  */
 
-// Base grid styles.
-.grid {
+
+/**------------------------------------------------------------------------------
+ * Base Grid Styles
+ -------------------------------------------------------------------------------*/
+.grid 
+{
     @include center($large-breakpoint);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / 3, 1fr));
     grid-row-gap: 3rem;
     grid-column-gap: 2rem;
     align-content: center;
     padding: $global-padding;
 
-    article {
+    article 
+    {
         background-color: $light-grey;
         border: 1px solid $dark-grey;
         display: block;
@@ -21,17 +26,23 @@
     }
 }
 
-// Responsive functionality.
-@media all and (min-width: 1024px) and (max-width: 1280px) { }
+/**------------------------------------------------------------------------------
+ * Media Queries
+ -------------------------------------------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
 
-@media all and (min-width: 768px) and (max-width: 1024px) { 
-    body {
+@media all and (min-width: 768px) and (max-width: 1024px) 
+{
+    body 
+    {
         margin: 20px;
     }
 }
 
-@media all and (min-width: 480px) and (max-width: 768px) {
-    body {
+@media all and (min-width: 480px) and (max-width: 768px) 
+{
+    body
+    {
         margin: 20px;
     }
 }
