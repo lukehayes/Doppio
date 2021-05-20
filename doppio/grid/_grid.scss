@@ -3,7 +3,7 @@
  */
 
 // Base grid styles.
-.dp-grid {
+.grid {
     @include center($large-breakpoint);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -12,7 +12,7 @@
     align-content: center;
     padding: $global-padding;
 
-    .dp-col {
+    .col {
         background-color: $light-grey;
         border: 1px solid $dark-grey;
         display: block;
