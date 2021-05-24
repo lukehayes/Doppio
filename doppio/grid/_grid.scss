@@ -7,7 +7,10 @@
  * Base Grid Styles
  -------------------------------------------------------------------------------*/
 
-// Grid maxiumum size is 3 columns. Will auto fill until that point.
+/**
+ * .grid class is meant to act as a general grid container with a maximum of
+ * three columns. Other column widths are also available like .grid-2 etc.
+ */
 .grid 
 {
     @include center($large-breakpoint);
@@ -25,6 +28,35 @@
         display: block;
         padding: 20px;
         font-size: 0.91rem;
+    }
+}
+
+/**
+ * .grid-2 class has a maximum width of two columns.
+ */
+.grid-2
+{
+    @include center($large-breakpoint);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / 2, 1fr));
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+    align-content: center;
+    padding: $global-padding;
+
+    article 
+    {
+        background-color: $light-grey;
+        border: 1px solid $dark-grey;
+        display: block;
+        padding: 20px;
+        font-size: 0.91rem;
+
+        button
+        {
+            display: inline;
+            width: 100%;
+        }
     }
 }
 
