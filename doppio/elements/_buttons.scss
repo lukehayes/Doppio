@@ -7,6 +7,8 @@
 /**------------------------------------------------------------------------------
  * Base Button Placeholders/Mixins
  -------------------------------------------------------------------------------*/
+
+// Parent styles that all buttons will inherit.
 .base-button
 {
     border:none;
@@ -20,12 +22,10 @@
     margin: 5px;
 }
 
-
 /**------------------------------------------------------------------------------
  * Button Implementation
  ------------------------------------------------------------------------------*/
 
-// Parent styles that all buttons will inherit.
 input[type="submit"],
 button {
 
