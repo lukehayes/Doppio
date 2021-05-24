@@ -6,6 +6,7 @@
  * Base Grid Placeholders/Mixins
  -------------------------------------------------------------------------------*/
 
+// Base grid styles that all grid classes should extend.
 .base-grid
 {
     @include center($large-breakpoint);
@@ -16,9 +17,7 @@
     padding: $global-padding;
 }
 
-/**
- * Set the maximum amount of columns available inside a grid container.
- */
+// Set the maximum amount of columns available inside a grid container.
 @mixin max-columns($columns)
 {
     grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / $columns, 1fr));
@@ -27,23 +26,29 @@
 /**------------------------------------------------------------------------------
  * Grid Implementations
  ------------------------------------------------------------------------------*/
-/**
- * .grid class is meant to act as a general grid container with a maximum of
- * three columns. Other column widths are also available like .grid-2 etc.
- */
+
+// .grid class is meant to act as a general grid container with a maximum of
+// three columns. Other column widths are also available like .grid-2 etc.
 .grid 
 {
     @extend .base-grid;
     @include max-columns(3);
 }
 
-/**
- * .grid-2 class has a maximum width of two columns.
- */
+// .grid-2 class has a maximum width of two columns.
 .grid-2
 {
     @extend .base-grid;
     @include max-columns(2);
+}
+
+/**
+ * .grid-4 class has a maximum width of four columns.
+ */
+.grid-4
+{
+    @extend .base-grid;
+    @include max-columns(4);
 }
 
 .base-grid
@@ -56,7 +61,6 @@
         padding: 20px;
         font-size: 0.91rem;
     }
-
 }
 /**------------------------------------------------------------------------------
  * Media Queries
