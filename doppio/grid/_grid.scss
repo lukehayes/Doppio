@@ -2,7 +2,6 @@
  * Doppio Grid System - work in progress. Removal probable.
  */
 
-
 /**------------------------------------------------------------------------------
  * Base Grid Placeholders/Mixins
  -------------------------------------------------------------------------------*/
@@ -17,6 +16,14 @@
     padding: $global-padding;
 }
 
+/**
+ * Set the maximum amount of columns available inside a grid container.
+ */
+@mixin max-columns($columns)
+{
+    grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / $columns, 1fr));
+}
+
 /**------------------------------------------------------------------------------
  * Grid Implementations
  ------------------------------------------------------------------------------*/
@@ -27,7 +34,7 @@
 .grid 
 {
     @extend .base-grid;
-    grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / 3, 1fr));
+    @include max-columns(3);
 }
 
 /**
@@ -36,7 +43,7 @@
 .grid-2
 {
     @extend .base-grid;
-    grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / 2, 1fr));
+    @include max-columns(2);
 }
 
 .base-grid
