@@ -1,7 +1,3 @@
-/**
- * Doppio Grid System - work in progress. Removal probable.
- */
-
 /**------------------------------------------------------------------------------
  * Base Grid Placeholders/Mixins
  -------------------------------------------------------------------------------*/
@@ -20,7 +16,7 @@
 // Set the maximum amount of columns available inside a grid container.
 @mixin max-columns($columns)
 {
-    grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / $columns, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150px) / $columns, 1fr));
 }
 
 /**------------------------------------------------------------------------------
@@ -42,9 +38,7 @@
     @include max-columns(2);
 }
 
-/**
- * .grid-4 class has a maximum width of four columns.
- */
+// .grid-4 class has a maximum width of four columns.
 .grid-4
 {
     @extend .base-grid;
@@ -62,6 +56,7 @@
         font-size: 0.91rem;
     }
 }
+
 /**------------------------------------------------------------------------------
  * Media Queries
  -------------------------------------------------------------------------------*/
