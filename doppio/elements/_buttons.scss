@@ -4,9 +4,11 @@
 
 @use "sass:color";
 
-// Parent styles that all buttons will inherit.
-input[type="submit"],
-button {
+/**------------------------------------------------------------------------------
+ * Base Button Placeholders/Mixins
+ -------------------------------------------------------------------------------*/
+.base-button
+{
     border:none;
     border-radius: $border-radius;
     background-color: $dark-grey;
@@ -16,6 +18,18 @@ button {
     font-size: 0.91rem;
     font-weight: 500;
     margin: 5px;
+}
+
+
+/**------------------------------------------------------------------------------
+ * Button Implementation
+ ------------------------------------------------------------------------------*/
+
+// Parent styles that all buttons will inherit.
+input[type="submit"],
+button {
+
+    @extend .base-button;
 
     &.btn-dark {
         background-color: $black;
@@ -31,5 +45,4 @@ button {
         background-color: $light-grey;
         color: $accent;
     }
-
 }
