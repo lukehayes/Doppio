@@ -4,31 +4,30 @@
 
 
 /**------------------------------------------------------------------------------
- * Base Grid Styles
+ * Base Grid Placeholders/Mixins
  -------------------------------------------------------------------------------*/
 
+.base-grid
+{
+    @include center($large-breakpoint);
+    display: grid;
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+    align-content: center;
+    padding: $global-padding;
+}
+
+/**------------------------------------------------------------------------------
+ * Grid Implementations
+ ------------------------------------------------------------------------------*/
 /**
  * .grid class is meant to act as a general grid container with a maximum of
  * three columns. Other column widths are also available like .grid-2 etc.
  */
 .grid 
 {
-    @include center($large-breakpoint);
-    display: grid;
+    @extend .base-grid;
     grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / 3, 1fr));
-    grid-row-gap: 3rem;
-    grid-column-gap: 2rem;
-    align-content: center;
-    padding: $global-padding;
-
-    article 
-    {
-        background-color: $light-grey;
-        border: 1px solid $dark-grey;
-        display: block;
-        padding: 20px;
-        font-size: 0.91rem;
-    }
 }
 
 /**
@@ -36,14 +35,12 @@
  */
 .grid-2
 {
-    @include center($large-breakpoint);
-    display: grid;
+    @extend .base-grid;
     grid-template-columns: repeat(auto-fit, minmax( ($large-breakpoint - 150) / 2, 1fr));
-    grid-row-gap: 3rem;
-    grid-column-gap: 2rem;
-    align-content: center;
-    padding: $global-padding;
+}
 
+.base-grid
+{
     article 
     {
         background-color: $light-grey;
@@ -51,15 +48,9 @@
         display: block;
         padding: 20px;
         font-size: 0.91rem;
-
-        button
-        {
-            display: inline;
-            width: 100%;
-        }
     }
-}
 
+}
 /**------------------------------------------------------------------------------
  * Media Queries
  -------------------------------------------------------------------------------*/
@@ -76,28 +67,28 @@
 
 //@media all and (min-width: 768px) and (max-width: 1024px) 
 //{
-    //body 
-    //{
-        //margin: 20px;
-    //}
-//}
-
-//@media all and (min-width: 480px) and (max-width: 768px) 
+//body 
 //{
+//margin: 20px;
+    //}
+    //}
+
+    //@media all and (min-width: 480px) and (max-width: 768px) 
+    //{
     //body
     //{
         //margin: 20px;
     //}
-//}
-
-//@media all and (max-width: 480px) { 
-    //body {
-        //margin: 20px;
     //}
-//}
 
-//[> Portrait <]
-//@media screen and (orientation:portrait) { [> Portrait styles here <] }
-//[> Landscape <]
-//@media screen and (orientation:landscape) { [> Landscape styles here <] }
+    //@media all and (max-width: 480px) { 
+        //body {
+            //margin: 20px;
+        //}
+        //}
+
+        //[> Portrait <]
+        //@media screen and (orientation:portrait) { [> Portrait styles here <] }
+        //[> Landscape <]
+        //@media screen and (orientation:landscape) { [> Landscape styles here <] }
 
