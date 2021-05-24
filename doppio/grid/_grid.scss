@@ -6,6 +6,8 @@
 /**------------------------------------------------------------------------------
  * Base Grid Styles
  -------------------------------------------------------------------------------*/
+
+// Grid maxiumum size is 3 columns. Will auto fill until that point.
 .grid 
 {
     @include center($large-breakpoint);
