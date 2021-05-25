@@ -2,6 +2,13 @@
  * Base Grid Placeholders/Mixins
  -------------------------------------------------------------------------------*/
 
+// Container class that only sets a max-width and centers the content.
+.container
+{
+    @include center($large-breakpoint);
+    padding: $global-padding;
+}
+
 // Base grid styles that all grid classes should extend.
 .base-grid
 {
@@ -60,6 +67,7 @@
 /**------------------------------------------------------------------------------
  * Media Queries
  -------------------------------------------------------------------------------*/
+
 // This part is here to see how well it works on its own.
 @media all and (min-width: 480px)
 {
