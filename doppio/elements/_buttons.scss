@@ -41,6 +41,11 @@ button {
         color: $black;
     }
 
+    &.btn-accent {
+        background-color: $accent;
+        color: $white;
+    }
+
     &.btn-small
     {
         padding: 5px 16px;
