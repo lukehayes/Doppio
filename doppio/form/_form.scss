@@ -1,0 +1,30 @@
+/**------------------------------------------------------------------------------
+ * Form Styles
+ ------------------------------------------------------------------------------*/
+
+form
+{
+    font-size: 0.91rem;
+
+    select,
+    input
+    {
+        border: 1px solid $dark-grey;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type="checkbox"]
+    {
+        display: inline;
+    }
+}
+
+@media all and (max-width: 740px)
+{
+    input
+    {
+        width: 100%;
+    }
+}
