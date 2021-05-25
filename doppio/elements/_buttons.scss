@@ -19,7 +19,7 @@
     padding: 10px 20px;
     font-size: 0.91rem;
     font-weight: 500;
-    margin: 5px;
+    margin-top: 5px;
 }
 
 /**------------------------------------------------------------------------------
@@ -41,14 +41,14 @@ button {
         color: $black;
     }
 
-    &:hover {
-        background-color: $light-grey;
-        color: $accent;
-    }
-
     &.btn-small
     {
         padding: 5px 16px;
         display: inline;
+    }
+
+    &:hover {
+        background-color: $light-grey;
+        color: $accent;
     }
 }
