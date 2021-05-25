@@ -45,4 +45,10 @@ button {
         background-color: $light-grey;
         color: $accent;
     }
+
+    &.btn-small
+    {
+        padding: 5px 16px;
+        display: inline;
+    }
 }
