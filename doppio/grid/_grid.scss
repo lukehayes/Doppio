@@ -56,10 +56,9 @@
 {
     article 
     {
-        background-color: $light-grey;
-        border: 1px solid $dark-grey;
+        //background-color: $light-grey;
+        //border: 1px solid $dark-grey;
         display: block;
-        padding: 20px;
         font-size: 0.91rem;
     }
 }
@@ -105,4 +104,3 @@
         //@media screen and (orientation:portrait) { [> Portrait styles here <] }
         //[> Landscape <]
         //@media screen and (orientation:landscape) { [> Landscape styles here <] }
-
