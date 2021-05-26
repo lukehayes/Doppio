@@ -14,9 +14,8 @@
 {
     @include center($large-breakpoint);
     display: grid;
-    grid-row-gap: 3rem;
-    grid-column-gap: 2rem;
-    align-content: center;
+    grid-row-gap: $grid-row-gap;
+    grid-column-gap: $grid-row-column;
     padding: $global-padding;
 }
 
