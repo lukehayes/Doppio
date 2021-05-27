@@ -4,6 +4,11 @@
 
 @use "sass:color";
 
+.text-padding
+{
+    padding: 10px;
+}
+
 .text-light {
     color : color.scale($dark-grey, $lightness: -44%);
     font-weight: 500;
@@ -28,4 +33,23 @@
 .text-underline
 {
     text-decoration: underline;
+}
+
+.text-highlight-dark
+{
+    @extend .text-padding;
+    background-color: $dark-grey;
+}
+
+.text-highlight-light
+{
+    @extend .text-padding;
+    background-color: $light-grey;
+}
+
+.text-highlight-accent
+{
+    @extend .text-padding;
+    background-color: $accent;
+    color: $white;
 }
