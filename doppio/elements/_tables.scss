@@ -10,6 +10,13 @@ table
 
     tr
     {
+        transition: $transition-speed;
+
+        &:hover
+        {
+            background-color: $light-grey
+        }
+
         th
         {
             padding: $cell-padding;
@@ -20,6 +27,7 @@ table
         {
             padding: $cell-padding;
             border: 1px solid $dark-grey;
+
         }
     }
 }
