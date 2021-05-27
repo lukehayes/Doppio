@@ -37,6 +37,13 @@
     @include max-columns(3);
 }
 
+// .grid-1 class has a maximum width of one column.
+.grid-1
+{
+    @extend .base-grid;
+    grid-template-columns: repeat(auto-fit, minmax( 1fr, 1fr));
+}
+
 // .grid-2 class has a maximum width of two columns.
 .grid-2
 {
