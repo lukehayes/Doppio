@@ -62,6 +62,9 @@ Doppio provides predefined styles for all raw HTML elements but extra classes ar
 <div class="text-bold"></div>
 <div class="text-italic"></div>
 <div class="text-underline"></div>
+<div class="text-highlight-dark"></div>
+<div class="text-highlight-light"></div>
+<div class="text-highlight-accent"></div>
 ```
 
 #### Anchors
