@@ -15,7 +15,7 @@
     transition: $transition-speed all;
     transtition-timing-function: ease-in-out;
     padding: $button-height $button-width;
-    font-size: 0.91rem;
+    font-size: $font-size;
     font-weight: 500;
     margin-top: 5px;
 }
