@@ -18,11 +18,10 @@ $button-width: 20px;
 
 
 /**------------------------------------------------------------------------------
- * Responsive Breakpoints
+ * Form Input
  ------------------------------------------------------------------------------*/
-$large-breakpoint: 1200px;
-$medium-breakpoint: 992px;
-$small-breakpoint: 540px;
+$form-input-margin: 10px;
+$form-input-padding: 7px;
 
 
 /**------------------------------------------------------------------------------
@@ -31,3 +30,11 @@ $small-breakpoint: 540px;
 $global-padding: 10px;
 $grid-row-gap: 2rem;
 $grid-row-column: 2rem;
+
+
+/**------------------------------------------------------------------------------
+ * Responsive Breakpoints
+ ------------------------------------------------------------------------------*/
+$large-breakpoint: 1200px;
+$medium-breakpoint: 992px;
+$small-breakpoint: 540px;

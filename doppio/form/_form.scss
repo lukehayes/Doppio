@@ -13,9 +13,8 @@ form
     {
         border: 1px solid $dark-grey;
         display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 7px;
+        margin: $form-input-margin 0;
+        padding: $form-input-padding;
         transition: $transition-speed;
 
         &:hover,
