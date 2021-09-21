@@ -2,6 +2,13 @@
  * Base Grid Placeholders/Mixins
  -------------------------------------------------------------------------------*/
 
+// Variables --------------------------------------------------------------------
+
+$grid-row-gap: 2rem;
+$grid-row-column: 2rem;
+// ------------------------------------------------------------------------------
+
+
 // Container class that only sets a max-width and centers the content.
 .container
 {
